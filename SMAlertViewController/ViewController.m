@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SMAlertControllerManager.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +19,20 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [SMAlertControllerManager setConfirmTitle:@"aaa"];
+    [SMAlertControllerManager setCancelAction:@selector(test222)];
+    [SMAlertControllerManager showAlertViewInController:self title:@"laji" message:@"hah" confirmAction:@selector(test)];
+}
+
+- (void)test{
+    NSLog(@"test111");
+}
+
+- (void)test222{
+    NSLog(@"test2222");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

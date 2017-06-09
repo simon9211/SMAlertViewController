@@ -15,6 +15,8 @@
 		DA1F1F401EEA77310002FBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1F1F3E1EEA77310002FBA2 /* LaunchScreen.storyboard */; };
 		DA1F1F4B1EEA77310002FBA2 /* SMAlertViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1F4A1EEA77310002FBA2 /* SMAlertViewControllerTests.m */; };
 		DA1F1F561EEA77310002FBA2 /* SMAlertViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1F551EEA77310002FBA2 /* SMAlertViewControllerUITests.m */; };
+		DA1F1F651EEA78CF0002FBA2 /* SMAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1F641EEA78CF0002FBA2 /* SMAlertControllerManager.m */; };
+		DA1F1F681EEA79140002FBA2 /* SMAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1F671EEA79140002FBA2 /* SMAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		DA1F1F511EEA77310002FBA2 /* SMAlertViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMAlertViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1F1F551EEA77310002FBA2 /* SMAlertViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAlertViewControllerUITests.m; sourceTree = "<group>"; };
 		DA1F1F571EEA77310002FBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1F1F631EEA78CF0002FBA2 /* SMAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAlertControllerManager.h; sourceTree = "<group>"; };
+		DA1F1F641EEA78CF0002FBA2 /* SMAlertControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAlertControllerManager.m; sourceTree = "<group>"; };
+		DA1F1F661EEA79140002FBA2 /* SMAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAlertController.h; sourceTree = "<group>"; };
+		DA1F1F671EEA79140002FBA2 /* SMAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAlertController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				DA1F1F341EEA77310002FBA2 /* AppDelegate.m */,
 				DA1F1F361EEA77310002FBA2 /* ViewController.h */,
 				DA1F1F371EEA77310002FBA2 /* ViewController.m */,
+				DA1F1F631EEA78CF0002FBA2 /* SMAlertControllerManager.h */,
+				DA1F1F641EEA78CF0002FBA2 /* SMAlertControllerManager.m */,
+				DA1F1F661EEA79140002FBA2 /* SMAlertController.h */,
+				DA1F1F671EEA79140002FBA2 /* SMAlertController.m */,
 				DA1F1F391EEA77310002FBA2 /* Main.storyboard */,
 				DA1F1F3C1EEA77310002FBA2 /* Assets.xcassets */,
 				DA1F1F3E1EEA77310002FBA2 /* LaunchScreen.storyboard */,
@@ -277,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1F1F381EEA77310002FBA2 /* ViewController.m in Sources */,
+				DA1F1F681EEA79140002FBA2 /* SMAlertController.m in Sources */,
 				DA1F1F351EEA77310002FBA2 /* AppDelegate.m in Sources */,
 				DA1F1F321EEA77310002FBA2 /* main.m in Sources */,
+				DA1F1F651EEA78CF0002FBA2 /* SMAlertControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +526,7 @@
 				DA1F1F5C1EEA77310002FBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1F1F5D1EEA77310002FBA2 /* Build configuration list for PBXNativeTarget "SMAlertViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				DA1F1F5F1EEA77310002FBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1F1F601EEA77310002FBA2 /* Build configuration list for PBXNativeTarget "SMAlertViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				DA1F1F621EEA77310002FBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
